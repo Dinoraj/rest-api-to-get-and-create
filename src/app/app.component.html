@@ -1,0 +1,19 @@
+<h1>Service Call</h1>
+
+<table class="table table-bordered">
+  <thead>
+  <tr>
+  <td>ID</td>
+  <td>FirstName</td>
+  <td>Email</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of records"> 
+    <td>{{item.id}}</td>
+    <td>{{item.first_name}}</td>
+    <td>{{item.email}}</td>
+    <td><a class="btn btn-info text-white" (click)="CreateUser(item)">Create User</a></td>
+  </tr>
+  </tbody>
+</table>
